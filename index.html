@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha</title>
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Gerador de Senha</h2>
+    
+        
+        <div class="input">
+            <input type="number" id="tamanho">
+            <label>Digite o tamanho da senha: </label>
+        </div>
+
+        <div class="input">
+            <input type="number" id="quantidade">
+            <label>Digite a quantidade de senhas: </label>
+        </div>
+
+        <div class="permitir">
+            <label>
+                <input type="checkbox" id="especial"> Permitir caracteres especiais - !@#$%&*()+=-*./;
+            </label>
+        </div><br>
+
+        <div class="permitir">
+            <label>
+                <input type="checkbox" id="numeros"> Permitir números
+            </label>
+        </div><br>
+
+        <div class="permitir">
+            <label>
+                <input type="checkbox" id="letra"> Permitir letra maiuscula 
+            </label>
+        </div><br><br>
+
+        <button onclick="gerar()">Gerar Senhas</button>
+        <button onclick="limpar()">Limpar Senhas</button>
+
+        <p>Resultados: </p><br><br>
+
+        <textarea id="senhasGeradas" rows="5" readonly  style="resize: none;"></textarea>
+    </div>
+
+    <script src="js/senha.js"></script>
+  
+</body>
+</html>
